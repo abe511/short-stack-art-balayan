@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ShortStack</title>
+</head>
+<body>
+    <header>
+        <p id="title">
+            Select dishes
+        </p>
+        <form action="#">
+            <label class="lbl category" for="category">Select Category:</label>
+            <select name="category" id="category" onclick="getList('category')">
+                <option value="none" selected hidden>Select category</option>
+            </select>
+            <button class="btn category" id="btn-category" type="button" onclick="filter('category')">Show</button>
+            <label class="lbl area" for="area">Select Area:</label>
+            <select name="area" id="area" onclick="getList('area')">
+                <option value="none" selected hidden>Select area</option>
+            </select>
+            <button class="btn area" id="btn-area" type="button" onclick="filter('area')">Show</button>
+            <label class="lbl ingredient" for="ingredient">Select Ingredient:</label>
+            <select name="ingredient" id="ingredient" onclick="getList('ingredient')">
+                <option value="none" selected hidden>Select ingredient</option>
+            </select>
+            <button class="btn ingredient" id="btn-ingredient" type="button" onclick="filter('ingredient')">Show</button>
+        </form>
+    </header>
+    <div class="loader hide">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+    <main>
+        <article id="modal" class="modal hide"></article>
+        <section id="category-section" class="category">
+            <ul id="category-list" class="meal preview"></ul>
+        </section>
+        <section id="area-section" class="area">
+            <ul id="area-list" class="meal preview"></ul>
+        </section>
+        <section id="ingredient-section" class="ingredient">
+            <ul id="ingredient-list" class="meal preview"></ul>
+        </section>
+    </main>
+    <footer>    
+        <button id="encrypt" onclick="encrypt()">Encrypt</button>
+        <button id="decrypt" onclick="decrypt()">Decrypt</button>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+</html>
