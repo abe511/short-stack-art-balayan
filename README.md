@@ -10,7 +10,7 @@
 
 
 ### an app which lets you find a perfect dish to test your cooking skills.
-### you can choose by Category, by Area and by Ingredient.
+### you can choose by Category, by Region and by Ingredient.
 
 #
 
