@@ -8,6 +8,7 @@
 2. Post your review as a *comment* to this PR: [https://github.com/abe511/short-stack-art-balayan/pull/1](https://github.com/abe511/short-stack-art-balayan/pull/1
 )
 
+---
 
 ### an app which lets you find a perfect dish to test your cooking skills.
 ### you can choose by Category, by Region and by Ingredient.
