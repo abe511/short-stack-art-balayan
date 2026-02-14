@@ -11,7 +11,7 @@
 ---
 
 #### an app which lets you find a perfect dish to test your cooking skills.
-#### you can choose by *Category*, by *Region* or by *Ingredient*.
+#### choose by *Category*, by *Region* or by *Ingredient*.
 
 
 main logic was coded in three days.\
